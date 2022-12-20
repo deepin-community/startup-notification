@@ -1,0 +1,43 @@
+Source: startup-notification
+Section: x11
+Priority: optional
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: @GNOME_TEAM@
+Build-Depends: debhelper (>= 11),
+               libx11-dev,
+               libxt-dev,
+               pkg-config,
+               libxcb1-dev,
+               libx11-xcb-dev,
+               libxcb-util0-dev,
+               gnome-pkg-tools
+Standards-Version: 4.3.0
+Vcs-Browser: https://salsa.debian.org/gnome-team/startup-notification
+Vcs-Git: https://salsa.debian.org/gnome-team/startup-notification.git
+Homepage: https://www.freedesktop.org/wiki/Software/startup-notification/
+
+Package: libstartup-notification0
+Multi-Arch: same
+Section: libs
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: library for program launch feedback (shared library)
+ startup-notification is a library which allows programs to give the user
+ visual feedback that they are being launched; this is typically implemented
+ using a busy cursor. This library is currently used by GNOME programs, but
+ is part of the freedesktop.org suite of cross-desktop libraries.
+ .
+ This package contains the shared library.
+
+Package: libstartup-notification0-dev
+Section: libdevel
+Multi-Arch: same
+Architecture: any
+Depends: ${misc:Depends}, libstartup-notification0 (= ${binary:Version}), libx11-dev, pkg-config
+Description: library for program launch feedback (development headers)
+ startup-notification is a library which allows programs to give the user
+ visual feedback that they are being launched; this is typically implemented
+ using a busy cursor. This library is currently used by GNOME programs, but
+ is part of the freedesktop.org suite of cross-desktop libraries.
+ .
+ This package contains the development headers.

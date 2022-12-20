@@ -1,0 +1,3 @@
+version=4
+https://www.freedesktop.org/software/@PACKAGE@/releases/ \
+	@PACKAGE@-([\d\.]+)@ARCHIVE_EXT@
