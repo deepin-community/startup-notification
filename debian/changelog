@@ -1,3 +1,9 @@
+startup-notification (0.12-deepin2) unstable; urgency=medium
+
+  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+
+ -- tunaichao <tunaichao@uniontech.com>  Thu, 10 Sep 2026 20:56:48 +0800
+
 startup-notification (0.12-deepin1) unstable; urgency=medium
 
   * Rebuild
